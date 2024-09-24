@@ -72,12 +72,12 @@ We welcome contributions! If you'd like to contribute to this project, please re
 This project is licensed under the MIT License. 
 
 ### Terms & Conditions
-For the terms and conditions related to BDT & VR, please refer to[Terms & Conditions for BDT & VR]([link-to-terms](https://www.termsfeed.com/terms-conditions/58c1ad8af7042b47e480fe3116441a33)).
+For the terms and conditions related to BDT & VR, please refer to[Terms & Conditions for BDT & VR]([https://www.termsfeed.com/terms-conditions/58c1ad8af7042b47e480fe3116441a33]).
 
 ### Cookies Policy
-For our cookies policy, please refer to [Cookies Policy for BDT & VR]([link-to-cookies-policy](https://www.termsfeed.com/cookies-policy/211050604fe7b2fd52456282536a5841)).
+For our cookies policy, please refer to [Cookies Policy for BDT & VR]([https://www.termsfeed.com/cookies-policy/211050604fe7b2fd52456282536a5841]).
 
 ### Privacy Policy
-For our privacy policy, please refer to [Privacy Policy for BDT & VR]([link-to-privacy-policy](https://www.termsfeed.com/privacy-policy/dccf77c030f8ec7f6eb9586263c3cdce)).
+For our privacy policy, please refer to [Privacy Policy for BDT & VR]([https://www.termsfeed.com/privacy-policy/dccf77c030f8ec7f6eb9586263c3cdce]).
 
 See the LICENSE file for additional details.
