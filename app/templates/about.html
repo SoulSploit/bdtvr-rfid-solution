@@ -1,0 +1,13 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}BDT&VR - About{% endblock %}
+
+{% block content %}
+<h2>About Us</h2>
+<img src="{{ url_for('static', filename='images/team.jpg') }}" alt="A group photo of our team at BDT&VR" />
+<p>At BDT&VR, we provide businesses with a head start in digitization through innovative software tools.</p>
+<p>Our goal is to enhance process quality and IT capabilities, ensuring seamless operations.</p>
+
+<h3>Get in Touch</h3>
+<p>Interested in learning more? <a href="{{ url_for('contact') }}">Contact us</a> today!</p>
+{% endblock %}
