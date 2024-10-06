@@ -1,20 +1,32 @@
 from flask import Flask, jsonify, request
+from flask_sqlalchemy import SQLAlchemy
 import logging
-from config import Config
+from config import get_config
 
-def create_app():
+# Initialize the database
+db = SQLAlchemy()
+
+def create_app(config_name='development'):
+    """Create a Flask application instance."""
     app = Flask(__name__)
 
-    # Load configuration
-    app.config.from_object(Config)
+    # Load the configuration
+    app.config.from_object(get_config(config_name))
 
     # Set up logging
     setup_logging(app)
 
+    # Initialize extensions
+    db.init_app(app)
+
     # Register blueprints
     register_blueprints(app)
 
-    # Error handling
+    # Create the database tables
+    with app.app_context():
+        db.create_all()
+
+    # Register error handlers
     register_error_handlers(app)
 
     return app
@@ -28,7 +40,7 @@ def setup_logging(app):
 
 def register_blueprints(app):
     """Register application blueprints."""
-    from .routes import home, about
+    from .routes import home, about  # Adjust this import as necessary
     app.register_blueprint(home.bp)
     app.register_blueprint(about.bp)
     app.logger.info("Blueprints registered.")
