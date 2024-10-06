@@ -2,60 +2,60 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    font-size: 16px;
-    line-height: 1.5;
+    background-color: #f4f4f4; /* Light background color */
+    font-size: 16px; /* Base font size */
+    line-height: 1.5; /* Improved readability */
     display: flex; /* Enables flexbox layout */
     flex-direction: column; /* Stacks elements vertically */
     height: 100vh; /* Full viewport height */
 }
 
 header {
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+    background: #007bff; /* Primary color for header */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for header */
+    text-align: center; /* Center align text */
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Resets padding */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Displays list items in a row */
+    margin: 0 15px; /* Spacing between items */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Removes underline */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    background-color: rgba(255, 255, 255, 0.2); /* Example highlight */
+    text-decoration: underline; /* Underline on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light highlight effect */
 }
 
 main {
-    padding: 20px;
-    flex: 1; /* Fills available space */
+    padding: 20px; /* Padding for main content */
+    flex: 1; /* Fills available space between header and footer */
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #007bff;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center; /* Center align footer text */
+    padding: 10px 0; /* Padding for footer */
+    background: #007bff; /* Same color as header */
+    color: #fff; /* White text color */
+    position: relative; /* Allows bottom alignment */
+    bottom: 0; /* Sticks to the bottom */
+    width: 100%; /* Full width */
 }
 
 /* Additional styles for responsive design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block;
-        margin: 5px 0;
+        display: block; /* Stacks items vertically on smaller screens */
+        margin: 5px 0; /* Spacing between stacked items */
     }
 }
