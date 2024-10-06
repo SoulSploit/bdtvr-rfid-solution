@@ -1,7 +1,8 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Default font for the application */
+    margin: 0; /* Resets default margin */
+    padding: 0; /* Resets default padding */
     background-color: #f4f4f4; /* Light background color */
     font-size: 16px; /* Base font size */
     line-height: 1.5; /* Improved readability */
@@ -10,13 +11,16 @@ body {
     height: 100vh; /* Full viewport height */
 }
 
+/* Header Styles */
 header {
     background: #007bff; /* Primary color for header */
     color: #fff; /* White text color */
     padding: 10px 20px; /* Padding for header */
     text-align: center; /* Center align text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none; /* Removes bullet points */
     padding: 0; /* Resets padding */
@@ -30,6 +34,7 @@ nav ul li {
 nav ul li a {
     color: #fff; /* White text color for links */
     text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
 nav ul li a:hover {
@@ -37,11 +42,14 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Light highlight effect */
 }
 
+/* Main Content Styles */
 main {
     padding: 20px; /* Padding for main content */
     flex: 1; /* Fills available space between header and footer */
+    overflow-y: auto; /* Enables vertical scroll if content overflows */
 }
 
+/* Footer Styles */
 footer {
     text-align: center; /* Center align footer text */
     padding: 10px 0; /* Padding for footer */
@@ -52,10 +60,33 @@ footer {
     width: 100%; /* Full width */
 }
 
-/* Additional styles for responsive design */
+/* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
         display: block; /* Stacks items vertically on smaller screens */
         margin: 5px 0; /* Spacing between stacked items */
     }
+
+    /* Main padding adjustment for small screens */
+    main {
+        padding: 10px; /* Reduced padding for smaller devices */
+    }
+
+    /* Header font size adjustment */
+    header h1 {
+        font-size: 24px; /* Slightly larger header for mobile */
+    }
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute; /* Position relative to parent */
+    background-color: #333; /* Dark background for tooltip */
+    color: #fff; /* White text for readability */
+    padding: 5px 10px; /* Padding around tooltip text */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 12px; /* Smaller font size */
+    z-index: 1000; /* Ensure it appears above other content */
+    opacity: 0.9; /* Slight transparency */
+    transition: opacity 0.2s ease-in-out; /* Smooth fade effect */
 }
