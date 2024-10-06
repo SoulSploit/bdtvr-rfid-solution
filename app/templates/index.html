@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDT&VR RFID Solution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to BDT&VR RFID Solution</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Your Comprehensive RFID Solution</h2>
+            <p>
+                Transform your operations through digitization and virtual reality. 
+                Our innovative RFID solution enhances productivity and streamlines operations,
+                enabling real-time asset tracking and improving process efficiency.
+            </p>
+            <a href="{{ url_for('get_started') }}" class="btn">Get Started</a>
+        </section>
+
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Increased Productivity</li>
+                <li>Automated Operations Management</li>
+                <li>Shortened Downtimes</li>
+                <li>Real-Time Asset Tracking</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; {{ current_year }} BDT & VR (PTY) Ltd | All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // JavaScript can be added here for additional functionality
+    </script>
+</body>
+</html>
