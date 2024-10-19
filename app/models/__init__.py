@@ -10,6 +10,9 @@ def init_app(app):
         app (Flask): The Flask application instance to bind the database.
     """
     db.init_app(app)
-    # Optionally, you can create the database tables here
-    # with app.app_context():
-    #     db.create_all()
+    
+    # Optionally, create the database tables if they do not exist
+    with app.app_context():
+        db.create_all()  # Create tables for all models defined
+
+    app.logger.info("SQLAlchemy initialized and database tables created (if needed).")
