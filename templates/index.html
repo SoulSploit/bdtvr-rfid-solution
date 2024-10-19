@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDT&VR RFID Solution</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <meta name="description" content="Discover how BDT&VR's RFID Solution can transform your operations through digitization and real-time asset tracking.">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <h1>Welcome to BDT&VR RFID Solution</h1>
+            <nav aria-label="Main Navigation">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home.index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about.about') }}">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home.contact') }}">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard.index') }}">Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section class="jumbotron text-center">
+            <h2>Your Comprehensive RFID Solution</h2>
+            <p class="lead">
+                Transform your operations through digitization and virtual reality. 
+                Our innovative RFID solution enhances productivity and streamlines operations,
+                enabling real-time asset tracking and improving process efficiency.
+            </p>
+            <a href="{{ url_for('get_started') }}" class="btn btn-primary btn-lg">Get Started</a>
+        </section>
+
+        <section>
+            <h3>Why Choose Us?</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Increased Productivity</li>
+                <li class="list-group-item">Automated Operations Management</li>
+                <li class="list-group-item">Shortened Downtimes</li>
+                <li class="list-group-item">Real-Time Asset Tracking</li>
+            </ul>
+        </section>
+
+        <section class="mt-4">
+            <h3>Project Goals</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Plan Your Transformation: Guide your journey to becoming a fully digital enterprise.</li>
+                <li class="list-group-item">Analyze Processes: Identify areas for improvement within your organization.</li>
+                <li class="list-group-item">Implement Strategic Frameworks: Ensure success with the right architecture and methodologies.</li>
+                <li class="list-group-item">Jumpstart Projects: Provide industry-specific templates and best practices for rapid implementation.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer bg-light mt-4">
+        <div class="container text-center">
+            <p>&copy; {{ current_year }} BDT & VR (PTY) Ltd | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
