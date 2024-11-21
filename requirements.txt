@@ -1,12 +1,12 @@
-Flask==2.2.3
+Flask==2.2.5
 Flask-SQLAlchemy==2.5.1
 psycopg2-binary==2.9.3
-gunicorn==20.1.0
+gunicorn==22.0.0
 python-dotenv==0.20.0
 Flask-WTF==1.0.0               # For form handling and validation
 Flask-Migrate==3.1.0           # For handling database migrations
 Flask-RESTful==0.3.9            # For building REST APIs
-requests==2.27.1                # For making HTTP requests, if needed for RFID data
+requests==2.32.2                # For making HTTP requests, if needed for RFID data
 pandas==1.4.2                   # For data manipulation and analysis
 matplotlib==3.5.1               # For data visualization
-opencv-python==4.8.1.78            # If using computer vision features (optional)
+opencv-python==4.10.0.84            # If using computer vision features (optional)
